@@ -78,8 +78,7 @@ public class Table implements Comparable<Table> {
 	 * @return 0 if the objects are equals.
 	 */
 	public int compareTo(Table table) {
-		int result = name.compareTo(table.getName());
-		return result += isPetFriendly ? 100000 : -100000;
+		return name.compareTo(table.getName());
 	}
 
 }
